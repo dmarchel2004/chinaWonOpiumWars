@@ -2,8 +2,8 @@
 path="mod/opiumwars/"
 tags={
 	"Alternative History"
-	"Map"
 	"National Focuses"
+	"Map"
 	"Events"
 }
 supported_version="1.5.4"

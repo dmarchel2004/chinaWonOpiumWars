@@ -2055,4 +2055,12 @@
  unlocks_decision:0 "Unlocks Decision: "
  ############################
  CHI_state_of_china:0 "State of China"
- CHI_state_of_china_desc:0 "Our once great nation has fallen from its grace. I just pooed."
+ CHI_state_of_china_desc:0 "Enter desc here"
+ CHI_preserve_the_monarchy:0 "Preserve the Monarchy"
+ CHI_preserve_the_monarchy_desc:0 "Enter desc here"
+ CHI_rule_of_the_people:0 "Rule of the People"
+ CHI_rule_of_the_people_desc:0 "Enter desc here"
+ CHI_absolutism:0 "Absolutism"
+ CHI_absolutism_desc:0 "Enter desc here"
+ CHI_a_republican_compromise:0 "A Republican Compromise"
+ CHI_a_republican_compromise:0 "Enter desc here"

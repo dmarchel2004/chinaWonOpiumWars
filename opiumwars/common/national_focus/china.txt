@@ -8,21 +8,78 @@ focus_tree = {
 			tag = CHI
 		}
 	}
-	
 
 	default = no
 
 	focus {
 		id = CHI_state_of_china
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_dangerous_deal
 		x=5
 		y=0
-
 		cost = 10
 
 		completion_reward = {
 			add_stability = .03
 		}
-
-
 	}
+
+	focus {
+		id = CHI_preserve_the_monarchy
+		icon = GFX_goal_generic_military_sphere
+		x=2
+		y=1
+		cost = 10
+
+		prerequisite = { focus = CHI_state_of_china }
+		mutually_exclusive = { focus = CHI_rule_of_the_people }
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.1 }
+		}
+	}
+
+	focus {
+		id = CHI_rule_of_the_people
+		icon = GFX_goal_support_democracy
+		x=8
+		y=1
+
+		prerequisite = { focus = CHI_state_of_china }
+		mutually_exclusive = { focus = CHI_preserve_the_monarchy }
+
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+	}
+
+	focus {
+		id = CHI_a_republican_compromise
+		icon = GFX_goal_generic_improve_relations
+		x=1
+		y=2
+
+		prerequisite = { focus = CHI_preserve_the_monarchy }
+		mutually_exclusive = { focus = CHI_absolutism }
+
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = -0.03 }
+		}
+	}
+
+	focus {
+		id = CHI_absolutism
+		icon = GFX_goal_demand_sudetenland
+		x=3
+		y=2
+
+		prerequisite = { focus = CHI_preserve_the_monarchy }
+		mutually_exclusive = { focus = CHI_a_republican_compromise }
+
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.03 }
+		}
+	}
+}

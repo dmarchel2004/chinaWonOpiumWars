@@ -25,7 +25,7 @@ focus_tree = {
 		}
 	}
 
-	##Monarchy##
+	###Monarchy###
 
 	focus {
 		id = CHI_preserve_the_monarchy
@@ -89,65 +89,12 @@ focus_tree = {
 		}
 	}
 
-	#####MILITARY#####
-
-	focus {
-		id = CHI_revitalize_the_military
-		icon = GFX_goal_generic_construct_mil_factory
-		x=13
-		y=0
-		cost = 10
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus {
-		id = CHI_inspire_the_people
-		icon = GFX_goal_generic_construct_infrastructure
-		x=13
-		y=1
-		cost=10
-
-		prerequisite = { focus = CHI_revitalize_the_military }
-		completion_reward = {
-			add_ideas = CHI_inspire_the_people
-		}
-	}
 	#####INDUSTRY#####
 
 	focus {
 		id = CHI_second_industrial_revolution
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 18
+		x = 15
 		y = 0
 		cost = 10
 
@@ -186,7 +133,7 @@ focus_tree = {
 	focus {
 		id = CHI_rural_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		x=17
+		x=14
 		y=1
 		cost=10
 
@@ -213,6 +160,95 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	#####MIX#####
+
+	focus {
+		id = CHI_korean_fortifications
+		icon = GFX_goal_generic_fortify_city
+		x=17
+		y=1
+		cost=10
+
+		prerequisite = { focus = CHI_second_industrial_revolution focus = CHI_revitalize_the_military }
+		completion_reward = {
+			army_experience = 10
+			527 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 12040
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9981
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 848
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#####MILITARY#####
+
+	focus {
+		id = CHI_revitalize_the_military
+		icon = GFX_goal_generic_construct_mil_factory
+		x=21
+		y=0
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus {
+		id = CHI_inspire_the_people
+		icon = GFX_goal_generic_allies_build_infantry
+		x=22
+		y=1
+		cost=10
+
+		prerequisite = { focus = CHI_revitalize_the_military }
+		completion_reward = {
+			add_ideas = CHI_inspire_the_people
 		}
 	}
 }

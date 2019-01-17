@@ -11,7 +11,9 @@ focus_tree = {
 
 	default = no
 
+	##################
 	#####POLITICS#####
+	##################
 
 	focus {
 		id = CHI_state_of_china
@@ -25,7 +27,7 @@ focus_tree = {
 		}
 	}
 
-	###Monarchy###
+	#####MONARCHY#####
 
 	focus {
 		id = CHI_preserve_the_monarchy
@@ -72,7 +74,7 @@ focus_tree = {
 		}
 	}
 
-	##Democracy##
+	#####DEMOCRACY#####
 
 	focus {
 		id = CHI_rule_of_the_people
@@ -89,7 +91,9 @@ focus_tree = {
 		}
 	}
 
+	##################
 	#####INDUSTRY#####
+	##################
 
 	focus {
 		id = CHI_second_industrial_revolution
@@ -162,9 +166,9 @@ focus_tree = {
 			}
 		}
 	}
-
+	#############
 	#####MIX#####
-
+	#############
 	focus {
 		id = CHI_korean_fortifications
 		icon = GFX_goal_generic_fortify_city
@@ -198,7 +202,9 @@ focus_tree = {
 		}
 	}
 
+	##################
 	#####MILITARY#####
+	##################
 
 	focus {
 		id = CHI_revitalize_the_military

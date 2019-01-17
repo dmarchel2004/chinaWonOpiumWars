@@ -15,35 +15,6 @@ set_technology = {
 	early_light_cruiser = 1
 }
 
-add_ideas = {
-	german_advisors
-}
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
-}
-
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}		
-	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
-		free_trade
-		CHI_hyper_inflation_1
-	}
-}
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
@@ -53,7 +24,7 @@ set_convoys = 40
 	add_political_power = 1198
 	set_stability = 0.5
 	set_war_support = 0.7
-	
+
 	if = {
 		limit = { has_dlc = "Waking the Tiger" }
 		complete_national_focus = CHI_unified_industrial_planning
@@ -102,23 +73,7 @@ set_convoys = 40
 		camco
 
 	}
-	if = {
-		limit = {
-			has_dlc = "Waking the Tiger"
-		}
-		remove_ideas = CHI_army_corruption_1
-		add_ideas = {
-			#national spirits
-			CHI_hyper_inflation_1
-			CHI_nine_power_treaty
-			CHI_army_corruption_2
-			CHI_ineffective_bureaucracy
-			CHI_incompetent_officers
-			free_trade
-			CHI_military_affairs_commission
-		}
-	}
-	
+
 	set_global_flag = fall_of_nanjing
 	create_faction = chinese_united_front
 	add_to_faction = PRC
@@ -130,7 +85,7 @@ set_convoys = 40
 
 		#PLACEHOLDER techs for vehicles
 		motorised_infantry = 1
-		tech_support = 1		
+		tech_support = 1
 		tech_recon = 1
 		tech_engineers = 1
 
@@ -169,24 +124,24 @@ set_convoys = 40
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 100
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -229,24 +184,24 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
-			popularity = 0
+		democratic = {
+			popularity = 32
 		}
 
 		fascism = {
 			popularity = 0
 		}
-		
+
 		communism = {
-			popularity = 0
+			popularity = 7
 			#banned = no #default is no
 		}
-		
-		neutrality = { 
-			popularity = 100
+
+		neutrality = {
+			popularity = 61
 		}
 	}
-		
+
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48

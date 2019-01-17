@@ -2052,36 +2052,47 @@
  continuous_boost_freedom_desc:0 "By reorganizing our colonial bureaucracy and recruiting native administrators, we will, in time, be able to take charge of our own affairs."
  continuous_restrict_freedom:0 "Suppress Subjects"
  continuous_restrict_freedom_desc:0 "Our colonial subjects have gotten rather silly ideas about things like "self-determination" or "national independence". It is time to disabuse them of these notions."
- unlocks_decision:0 "Unlocks Decision: "
- ############################
 
+ ##################
  #####POLITICS#####
+ ##################
 
  CHI_state_of_china:0 "State of China"
  CHI_state_of_china_desc:0 "Enter desc here"
- ###Monarchy###
+
+ #####MONARCHY#####
+
  CHI_preserve_the_monarchy:0 "Preserve the Monarchy"
  CHI_preserve_the_monarchy_desc:0 "Enter desc here"
  CHI_rule_of_the_people:0 "Rule of the People"
  CHI_rule_of_the_people_desc:0 "Enter desc here"
  CHI_absolutism:0 "Absolutism"
  CHI_absolutism_desc:0 "Enter desc here"
- ###Democracy###
+
+ #####DEMOCRACY####
+ 
  CHI_a_republican_compromise:0 "A Republican Compromise"
  CHI_a_republican_compromise:0 "Enter desc here"
- 
+
  #####INDUSTRY#####
 
  CHI_second_industrial_revolution:0 "Second Industrial Revolution"
  CHI_second_industrial_revolution_desc:0 "Enter desc here"
 
+ #############
  #####MIX#####
+ #############
+
  CHI_korean_fortifications:0 "Korean Fortifications"
  CHI_korean_fortifications_desc:0 "Enter desc here"
 
+ ##################
  #####MILITARY#####
+ ##################
+
  CHI_revitalize_the_military:0 "Revitalize the Industry"
  CHI_revitalize_the_military_desc:0 "Enter desc here"
  CHI_inspire_the_people:0 "Inspire the People"
  CHI_inspire_the_people_desc:0 "Enter desc here"
 
+ unlocks_decision:0 "Unlocks Decision: "

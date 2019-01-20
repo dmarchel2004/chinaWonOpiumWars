@@ -3,6 +3,6 @@ What if China Won the Opium Wars? an alternate history mod for Hearts of Iron IV
 
 ## Goals
 
-* NEW ocus Trees for China, Japan, Great Britain, Russia, USA, and Germany.
+* NEW focus Trees for China, Japan, Great Britain, Russia, USA, and Germany.
 * A new base focus tree for every other nation.
 * Designing the map to match the scenario.
